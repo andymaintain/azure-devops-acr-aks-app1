@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: andymaintainazuredevopsacraksapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: andymaintainazuredevopsacraksapp
+  template:
+    metadata:
+      labels:
+        app: andymaintainazuredevopsacraksapp 
+    spec:
+      containers:
+        - name: andymaintainazuredevopsacraksapp 
+          image: aksacradocr.azurecr.io/andymaintainazuredevopsacraksapp
+          ports:
+          - containerPort: 80
