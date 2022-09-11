@@ -51,8 +51,8 @@ stages:
   jobs:
   - deployment: Deploy
     displayName: Deploy
-    pool:
-      vmImage: $(vmImageName)
+    pool: 'default'
+ #     vmImage: $(vmImageName)
     environment: 'andymaintainazuredevopsacraksapp1.default'
     strategy:
       runOnce:
