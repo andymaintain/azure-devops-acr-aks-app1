@@ -13,7 +13,7 @@ stages:
   - job: Build
     displayName: Build Job
     pool:
-      vmImage: 'default'
+      vmImage: 'Default'
     steps: 
 
     # Task-1: Build Docker Image and push to Azure Container Registry ACR
